@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="board-color">
+            <input type="color" name="" class="board-color1">
+            <input type="color" name="" class="board-color2">
+        </div>
+        <div class="buttons">
+            <button onclick="setBg('to top',this)">
+                <i class='bx bx-up-arrow-alt' ></i>
+            </button>
+            <button onclick="setBg('to bottom',this)">
+                <i class='bx bx-down-arrow-alt' ></i>
+            </button>
+            <button onclick="setBg('to right',this)">
+                <i class='bx bx-right-arrow-alt' ></i>
+            </button>
+            <button onclick="setBg('to left',this)">
+                <i class='bx bx-left-arrow-alt'></i>
+            </button>
+            <button onclick="setBg('to top right',this)">
+                <i class='bx bx-up-arrow-alt' id="rotate-top-right" ></i>
+            </button>
+            <button onclick="setBg('to top left',this)">
+                <i class='bx bx-down-arrow-alt' id="rotate-top-left" ></i>
+            </button>
+            <button onclick="setBg('to bottom right',this)">
+                <i class='bx bx-right-arrow-alt' id="rotate-bottom-right" ></i>
+            </button>
+            <button onclick="setBg('to bottom left',this)">
+                <i class='bx bx-left-arrow-alt' id="rotate-bottom-left" ></i>
+            </button>
+        </div>
+        <button id="generate">
+            Generate
+        </button>
+        <div class="copy-textcolor">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Copy</button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

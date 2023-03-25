@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 500px;
+  height: 400px;
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 5px;
+}
+.card .board-color {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+.card .board-color input {
+  border: none;
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+  background-color: transparent;
+  width: 100px;
+  height: 45px;
+}
+.card .buttons {
+  display: flex;
+  justify-content: center;
+}
+.card .buttons button {
+  margin: 10px;
+  padding: 3px 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.card .buttons button i {
+  font-size: 20px;
+}
+.card .buttons button #rotate-top-right {
+  transform: rotate(45deg);
+}
+.card .buttons button #rotate-top-left {
+  transform: rotate(135deg);
+}
+.card .buttons button #rotate-bottom-right {
+  transform: rotate(45deg);
+}
+.card .buttons button #rotate-bottom-left {
+  transform: rotate(-45deg);
+}
+.card #generate {
+  display: block;
+  margin: 30px auto;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(40, 168, 40);
+  width: 150px;
+  height: 40px;
+  font-size: 17px;
+  color: white;
+}
+.card .copy-textcolor {
+  position: relative;
+  width: 85%;
+  height: 110px;
+  display: block;
+  margin: 0 auto;
+}
+.card .copy-textcolor textarea {
+  background-color: rgba(128, 128, 128, 0.288);
+  outline: none;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  background-image: li;
+  border-radius: 5px;
+}
+.card .copy-textcolor button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(40, 168, 40);
+  padding: 5px 8px;
+  color: white;
+}
+
+.active {
+  background-color: rgb(40, 168, 40);
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    height: 450px;
+  }
+  .buttons {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
